@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>页面走丢了==</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+</head>
+<body>
+    <div>
+        <span class="oops">Oops!</span><br/>
+        <img th:src="@{/img/MissingPage.png}"/>
+        <p>There seems to be a problem with the page you requested(<span th:text="${path}"/>.</p>
+        <p th:text="${'Details:'+message}"/>
+    </div>
+</body>
+</html>
